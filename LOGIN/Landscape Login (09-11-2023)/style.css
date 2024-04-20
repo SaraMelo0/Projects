@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(image/landscape.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 400px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: transparent;
+  }
+  h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+  }
+
+.input-box{
+position: relative;
+margin: 30px 0;
+width: 300px;
+border-bottom: 2px solid#fff;
+}
+.input-box label{
+position: absolute ;
+top: 50%;
+left: 5px;
+transform: translateY(-50%);
+color: #fff;
+font-size: 1em ;
+pointer-events: none;
+transition: 0.5s;
+} 
+
+input:focus ~ label{
+top: -5px;
+}
+
+input:focus ~ label{
+top: -5px;
+}
+
+.input-box input{
+width: 100%;
+height: 50px;
+background: transparent;
+border: none;
+outline: none;
+font-size: 1em;
+padding: 0 35px 0 5px;
+color: #000;
+}
+.input-box ion-icon{
+position: absolute;
+right: 8px;
+color: #fff;
+font-size: 1.2em;
+top: 20px;
+}
+
+.forget-password {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 15px;
+    font-size: 0.9em;
+}
+
+.forget-password label {
+    display: flex;
+    align-items: center;
+}
+
+.forget-password label a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.forget-password label a:hover{
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 1em;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background-color: #d9d9d9;
+}
+
+.signup {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.signup a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+p {
+   color: mistyrose;
+   font-size: 10px;
+   text-align: center;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 340px;
+    }
+}
