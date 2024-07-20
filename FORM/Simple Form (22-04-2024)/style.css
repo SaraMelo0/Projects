@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    background-color: #ffffff;
+    font-family: "DM Sans";
+}
+
+h1, p {
+    text-align: center;
+}
+
+.form {
+    width: 35em;
+    height: 28em;
+    margin: 0 auto; 
+    background-color: #FAF8F8;
+    border-radius: 34px;
+    padding: 20px;
+}
+
+.form hr {
+    border: 0.01px solid #6f6c9051;
+}
+
+.form-group label {
+    color: #170F49;
+}
+
+.form-group input {
+   width: 200px; 
+   height: 36px;
+   border-radius: 46px;
+   border: none;
+   box-shadow: rgba(0, 0, 0, 0.058) 0px 3px 12px;
+}
+
+.form.form-group input:focus {
+    outline: 1px solid #6F6C90;
+    transition: outline 0.5s ease;
+}
+
+.form-group {
+    margin-bottom: 35px;
+}
+
+.form-group input::placeholder {
+    padding: 4px;
+    color: #6F6C90;
+}
+
+input[type="date"]::-webkit-datetime-edit  {
+    padding: 4px;
+    padding-right: 3px;
+    color: #6F6C90;
+}
+
+#btn {
+    text-align: center;
+}
+         
+#btn-grad {
+    background-image: linear-gradient(to right, #1D2B64 0%, #F8CDDA  51%, #1D2B64  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 58px;
+    border: none;
+  }
+
+#btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+ 

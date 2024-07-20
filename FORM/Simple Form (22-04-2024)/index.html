@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="font-size: 30px; color: #170F49;">Preencha o formulário</h1>
+    <p style="font-size: 18px; color: #6F6C90; font-weight: 300;">Adicione todos os detalhes necessários.</p>
+
+    <form id="myForm">
+        <div class="form">
+            <h2 style="font-size: 20px; color: #170F49;font-weight: 600;">Detalhes do contato</h2>
+            <hr>
+            <br>
+
+            <div class="form-group">
+                <label for="name">Nome completo </label><br>
+                <input type="text" id="name" name="name" required placeholder="Seu nome"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="number">Número </label><br>
+                <input type="text" id="numero" name="numero" required placeholder="(xx) xxxxx-xxxx"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email </label><br>
+                <input type="email" id="email" name="email" required placeholder="exemplo@email.com"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Data de Nascimento </label><br>
+                <input type="date" id="data" name="data" required><br>
+            </div>
+        </div>
+
+        <div id="btn">
+            <button type="submit" id="btn-grad">Enviar</button>
+        </div>
+    </form>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            var name = document.getElementById("name").value;
+            var numero = document.getElementById("numero").value;
+            var email = document.getElementById("email").value;
+            var data = document.getElementById("data").value;
+
+            if (name === "" || numero === "" || email === "" || data === "") {
+                alert("Por favor, preencha todos os campos!");
+                event.preventDefault();
+            } else {
+                
+                var info = "Nome: " + name + "\nNúmero: " + numero + "\nEmail: " + email + "\nData de Nascimento: " + data;
+                alert(info);
+                
+                console.log("Informações do formulário:");
+                console.log("Nome: ", name);
+                console.log("Número: ", numero);
+                console.log("Email: ", email);
+                console.log("Data de Nascimento: ", data);
+                
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
